@@ -1,0 +1,88 @@
+*{  
+    font-family: 'Oxanium', monospace;
+    box-sizing: border-box;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    background-image: url(/imagens/imagem4.png);
+    background-position: center;
+    text-align: center;
+    min-height: 100vh;
+
+}
+
+main{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    
+}
+
+.botoes{
+    position: absolute;
+    top: 6%;
+    left: 2%;   
+    height: 25px;
+    
+    
+}
+
+
+.botaoVoltar:active{
+    box-shadow: 0 2px gray;
+    
+}
+
+.valores {
+    display: flex;
+    position: absolute;
+    top: 15%;
+    left: 2%; 
+    align-items: center; 
+}
+
+.seta {
+    font-size: 24px; 
+    margin: 0 15px; 
+}
+
+.valores input {
+    border-radius: 8px;
+    width: 180px;
+    height: 30px;
+    font-size: 20px;
+    background-color: aliceblue;
+}
+
+.valores #resultado {
+    border-radius: 8px;
+    width: 180px;
+    height: 30px;
+    font-size: 20px;
+    background-color: aliceblue;
+}
+
+
+
+.listamedidas{
+    display: flex;
+    position: absolute;
+    top: 18.9%;
+    left: 3.8%;
+    align-items: center;
+    gap: 87px;
+}
+
+.medidasOrigem, .medidasDestino {
+    width: 150px;
+    height: auto;
+    font-size: 20px;
+}
+
+
+
+

@@ -1,0 +1,61 @@
+*{  
+    font-family: 'Oxanium', monospace;
+    box-sizing: border-box;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+body{
+    background-image: url(/imagens/imagem3.jpg);
+    background-position: center;
+    text-align: center;
+    min-height: 100vh;
+
+}
+
+main{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    
+}
+
+
+.selectOpcoes{
+    position: absolute;
+    bottom: 29%;
+    left: 28%;
+    transform: rotate(4deg);
+    background-color: #6ab7f5;
+    border-radius: 8px;
+    
+  
+    
+}
+
+.botaoIr{
+    position: absolute;
+    bottom: 20%;
+    left: 33%;
+    transform: rotate(4deg);
+    background-color: #6ab7f5;
+    border-radius: 8px;
+    
+
+}
+
+.botaoIr:hover{
+    background-color: #1a389b;
+}
+
+.botaoIr:active{
+    background-color: #1a389b;
+    box-shadow: 0 2px #6ab7f5;
+    
+}
+
+
+
