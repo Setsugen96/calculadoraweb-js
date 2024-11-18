@@ -25,6 +25,7 @@ main{
 
 
 .selectOpcoes{
+    width: 200px;
     position: absolute;
     bottom: 29%;
     left: 28%;
