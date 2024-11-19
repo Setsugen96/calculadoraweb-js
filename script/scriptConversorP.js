@@ -16,19 +16,14 @@ botaoLimpar.addEventListener('click', () => {
     resultado.textContent = '';
 });
 
+
 const operacoes = {
-    "quilometro-metro": (valor) => valor * 1000,
-    "quilometro-centimetro": (valor) => valor * 100000,
-    "quilometro-milimetro": (valor) => valor * 1000000,
-    "metro-quilometro": (valor) => valor / 1000,
-    "metro-centimetro": (valor) => valor * 100,
-    "metro-milimetro": (valor) => valor * 1000,
-    "centimetro-quilometro": (valor) => valor / 100000,
-    "centimetro-metro": (valor) => valor / 100,
-    "centimetro-milimetro": (valor) => valor * 10,
-    "milimetro-quilometro": (valor) => valor / 1000000,
-    "milimetro-metro": (valor) => valor / 1000,
-    "milimetro-centimetro": (valor) => valor / 10,
+    "tonelada-quilograma": (valor) => valor * 1000,
+    "tonelada-grama": (valor) => valor * 1000000,
+    "quilograma-tonelada": (valor) => valor / 1000,
+    "quilograma-grama": (valor) => valor * 1000,
+    "grama-tonelada": (valor) => valor / 1000000,
+    "grama-quilograma": (valor) => valor / 1000,
 };
 
 
@@ -40,13 +35,20 @@ const converter = () => {
     const medidaDestinoValue = medidaDestino.value;
     const chave = `${medidaOrigemValue}-${medidaDestinoValue}`;
 
-    if(operacoes[chave]) {
-        const convresultado = operacoes[chave](valor);
-        resultado.textContent = `${convresultado}`;
-    }
+    if(isNaN(valor)){
+        resultado.textContent = '';
+
+    }else{
+        
+        if(operacoes[chave]) {
+            const convresultado = operacoes[chave](valor);
+            resultado.textContent = `${convresultado}`;
+        }
+    }   
 }
+
+
 
 valor1.addEventListener("input", converter);
 medidaOrigem.addEventListener("change", converter);
 medidaDestino.addEventListener("change", converter);
-converter();

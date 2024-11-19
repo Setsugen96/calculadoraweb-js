@@ -1,6 +1,7 @@
 const rotasOpcoes = {
     calculadora: "calcSimples.html",
-    conversor : "conversorMedidas.html"
+    conversorComprimento : "conversorComprimento.html",
+    conversorPeso : "conversorPeso.html"
 }
 
 const verificarOp = () =>{
